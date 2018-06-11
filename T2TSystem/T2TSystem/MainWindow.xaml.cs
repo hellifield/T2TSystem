@@ -43,12 +43,21 @@ namespace T2TSystem
 
         private void bUsun_Click_1(object sender, RoutedEventArgs e)
         {
-            while (lBPacjenci.SelectedItems.Count != 0)
-            {
-
+         
                 lBPacjenci.Items.Remove(lBPacjenci.SelectedItems[0]);
 
-            }
+            
+        }
+
+        private void bEdytuj_Click(object sender, RoutedEventArgs e)
+        {
+            if (lBPacjenci.SelectedIndex < 0) return;
+
+            string temp = lBPacjenci.Items[lBPacjenci.SelectedIndex].ToString();
+            string[] pacjent = temp.Split('|');   
+            tbImie.Text = pacjent[0].ToString();
+            tbNazwisko.Text = pacjent[1];
+            tbPesel.Text = pacjent[2];
         }
 
         }
