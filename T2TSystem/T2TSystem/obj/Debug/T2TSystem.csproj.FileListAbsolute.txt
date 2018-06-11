@@ -1,0 +1,13 @@
+C:\Users\Martyna\Desktop\Elsner\T2TSystem\T2TSystem\bin\Debug\T2TSystem.exe.config
+C:\Users\Martyna\Desktop\Elsner\T2TSystem\T2TSystem\bin\Debug\T2TSystem.exe
+C:\Users\Martyna\Desktop\Elsner\T2TSystem\T2TSystem\bin\Debug\T2TSystem.pdb
+C:\Users\Martyna\Desktop\Elsner\T2TSystem\T2TSystem\obj\Debug\T2TSystem.csprojResolveAssemblyReference.cache
+C:\Users\Martyna\Desktop\Elsner\T2TSystem\T2TSystem\obj\Debug\MainWindow.baml
+C:\Users\Martyna\Desktop\Elsner\T2TSystem\T2TSystem\obj\Debug\MainWindow.g.cs
+C:\Users\Martyna\Desktop\Elsner\T2TSystem\T2TSystem\obj\Debug\App.g.cs
+C:\Users\Martyna\Desktop\Elsner\T2TSystem\T2TSystem\obj\Debug\T2TSystem_MarkupCompile.cache
+C:\Users\Martyna\Desktop\Elsner\T2TSystem\T2TSystem\obj\Debug\T2TSystem.g.resources
+C:\Users\Martyna\Desktop\Elsner\T2TSystem\T2TSystem\obj\Debug\T2TSystem.Properties.Resources.resources
+C:\Users\Martyna\Desktop\Elsner\T2TSystem\T2TSystem\obj\Debug\T2TSystem.csproj.GenerateResource.Cache
+C:\Users\Martyna\Desktop\Elsner\T2TSystem\T2TSystem\obj\Debug\T2TSystem.exe
+C:\Users\Martyna\Desktop\Elsner\T2TSystem\T2TSystem\obj\Debug\T2TSystem.pdb
