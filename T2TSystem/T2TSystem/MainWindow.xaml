@@ -3,20 +3,29 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="390.213" Width="525">
     <Grid>
-        <ListBox x:Name="lBPacjenci" HorizontalAlignment="Left" Height="222" Margin="36,48,0,0" VerticalAlignment="Top" Width="134" Tag="lBPacjenci"/>
-        <TextBox x:Name="tbImie" HorizontalAlignment="Left" Height="21" Margin="282,75,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="106" Tag="tbImie"/>
-        <TextBox x:Name="tbNazwisko" HorizontalAlignment="Left" Height="25" Margin="282,114,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="106" Tag="tbNazwisko"/>
-        <TextBox x:Name="tbPesel" HorizontalAlignment="Left" Height="26" Margin="282,160,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="106" Tag="tbPesel"/>
-        <Label Content="Lista Pacjentów" HorizontalAlignment="Left" Height="33" Margin="57,10,0,0" VerticalAlignment="Top" Width="113" Tag="lLista"/>
-        <Label Content="Imię:" HorizontalAlignment="Left" Height="26" Margin="175,71,0,0" VerticalAlignment="Top" Width="77" RenderTransformOrigin="0.886,0.974" Tag="lImie"/>
-        <Label Content="Nazwisko:" HorizontalAlignment="Left" Height="26" Margin="175,114,0,0" VerticalAlignment="Top" Width="77" RenderTransformOrigin="0.886,0.974" Tag="lNazwisko"/>
-        <Label Content="Pesel:" HorizontalAlignment="Left" Height="26" Margin="175,160,0,0" VerticalAlignment="Top" Width="77" RenderTransformOrigin="0.886,0.974" Tag="lPesel"/>
-        <Button Content="Dodaj pacjenta" HorizontalAlignment="Left" Height="22" Margin="282,218,0,0" VerticalAlignment="Top" Width="106" Tag="bDodaj" Click="Button_Click"/>
-        <Button Content="Usuń pacjenta" HorizontalAlignment="Left" Height="22" Margin="36,281,0,0" VerticalAlignment="Top" Width="134" Tag="bUsun"/>
-        <Button Content="Edytuj" HorizontalAlignment="Left" Height="22" Margin="282,281,0,0" VerticalAlignment="Top" Width="106" Tag="bEdytuj"/>
-        <Button Content="Usuń pacjenta" HorizontalAlignment="Left" Height="22" Margin="36,281,0,0" VerticalAlignment="Top" Width="134" Tag="bUsun"/>
-        <Button Content="Sortuj alfabetycznie" HorizontalAlignment="Left" Height="22" Margin="36,308,0,0" VerticalAlignment="Top" Width="134" Tag="bSortuj"/>
-        <Button Content="Szukaj" HorizontalAlignment="Left" Height="22" Margin="282,248,0,0" VerticalAlignment="Top" Width="106" Tag="bSzukaj"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="469*"/>
+            <ColumnDefinition Width="48*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="204*"/>
+            <RowDefinition Height="73*"/>
+            <RowDefinition Height="59*"/>
+            <RowDefinition Height="23*"/>
+        </Grid.RowDefinitions>
+        <ListBox x:Name="lBPacjenci" HorizontalAlignment="Left" Height="222" Margin="34,48,0,0" VerticalAlignment="Top" Width="181" Tag="lBPacjenci" Grid.RowSpan="2"/>
+        <TextBox x:Name="tbImie" HorizontalAlignment="Left" Height="21" Margin="353,50,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="106" Tag="tbImie"/>
+        <TextBox x:Name="tbNazwisko" HorizontalAlignment="Left" Height="25" Margin="353,90,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="106" Tag="tbNazwisko"/>
+        <TextBox x:Name="tbPesel" HorizontalAlignment="Left" Height="26" Margin="353,135,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="106" Tag="tbPesel"/>
+        <Label Content="Lista Pacjentów" HorizontalAlignment="Left" Height="33" Margin="78,10,0,0" VerticalAlignment="Top" Width="113" Tag="lLista"/>
+        <Label Content="Imię:" HorizontalAlignment="Left" Height="26" Margin="257,46,0,0" VerticalAlignment="Top" Width="77" RenderTransformOrigin="0.886,0.974" Tag="lImie"/>
+        <Label Content="Nazwisko:" HorizontalAlignment="Left" Height="26" Margin="257,89,0,0" VerticalAlignment="Top" Width="77" RenderTransformOrigin="0.886,0.974" Tag="lNazwisko"/>
+        <Label Content="Pesel:" HorizontalAlignment="Left" Height="26" Margin="257,135,0,0" VerticalAlignment="Top" Width="77" RenderTransformOrigin="0.886,0.974" Tag="lPesel"/>
+        <Button x:Name="bDodaj" Content="Dodaj pacjenta" HorizontalAlignment="Left" Height="22" Margin="353,10,0,0" VerticalAlignment="Top" Width="106" Tag="bDodaj" Click="bDodaj_Click" Grid.Row="1"/>
+        <Button Content="Edytuj" HorizontalAlignment="Left" Height="22" Margin="353,44,0,0" VerticalAlignment="Top" Width="106" Tag="bEdytuj" Grid.Row="1"/>
+        <Button x:Name="bUsun" Content="Usuń pacjenta" HorizontalAlignment="Left" Height="22" Margin="57,17,0,0" VerticalAlignment="Top" Width="134" Tag="bUsun" Click="bUsun_Click_1" Grid.Row="2"/>
+        <Button Content="Sortuj alfabetycznie" HorizontalAlignment="Left" Height="22" Margin="57,44,0,0" VerticalAlignment="Top" Width="134" Tag="bSortuj" Grid.Row="2" Grid.RowSpan="2"/>
+        <Button Content="Szukaj" HorizontalAlignment="Left" Height="22" Margin="353,44,0,0" VerticalAlignment="Top" Width="106" Tag="bSzukaj" Grid.Row="2" RenderTransformOrigin="0.842,0.353" Grid.RowSpan="2"/>
 
 
     </Grid>

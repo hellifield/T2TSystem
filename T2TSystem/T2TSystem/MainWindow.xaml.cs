@@ -30,16 +30,25 @@ namespace T2TSystem
 
         }
           
-        private void Button_Click(object sender, RoutedEventArgs e)
+
+        private void bDodaj_Click(object sender, RoutedEventArgs e)
         {
-          imie = tbImie.Text;
-          nazwisko = tbNazwisko.Text;
-          pesel = tbPesel.Text;
-     
+            imie = tbImie.Text;
+            nazwisko = tbNazwisko.Text;
+            pesel = tbPesel.Text;
 
-          lBPacjenci.Items.Add(string.Format("{0} | {1} | {2}", imie, nazwisko, pesel));
-           
 
+            lBPacjenci.Items.Add(string.Format("{0} | {1} | {2}", imie, nazwisko, pesel));
+        }
+
+        private void bUsun_Click_1(object sender, RoutedEventArgs e)
+        {
+            while (lBPacjenci.SelectedItems.Count != 0)
+            {
+
+                lBPacjenci.Items.Remove(lBPacjenci.SelectedItems[0]);
+
+            }
         }
 
         }
